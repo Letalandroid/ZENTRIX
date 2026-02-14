@@ -800,7 +800,7 @@ textarea:focus-visible {
 }
 @media (min-width: 900px) {
   .team-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .team-card {
@@ -816,8 +816,8 @@ textarea:focus-visible {
   transform: translateY(-4px);
 }
 .team-avatar {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   background: var(--accent-dim);
   display: flex;
@@ -827,8 +827,14 @@ textarea:focus-visible {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--white);
-  border: 2px solid var(--border-light);
+  border: 3px solid var(--border-light);
   transition: all var(--transition);
+  overflow: hidden;
+}
+.team-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .team-card:hover .team-avatar {
   border-color: var(--white);
@@ -858,4 +864,95 @@ textarea:focus-visible {
   font-size: 0.875rem;
   color: var(--text-dim);
   line-height: 1.6;
+}
+.team-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.team-email {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.team-email:hover {
+  color: var(--white);
+}
+.team-social {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  font-size: 1.125rem;
+}
+.social-link:hover {
+  background: var(--bg-glass-hover);
+  border-color: var(--white);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   Contact Section
+   ============================================ */
+.section-contact {
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--bg-card) 20%,
+    var(--bg-card) 80%,
+    transparent
+  );
+}
+.contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-item {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contact-label {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+.contact-value {
+  font-size: 1.25rem;
+  color: var(--text);
+  font-weight: 500;
+}
+.contact-value a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.contact-value a:hover {
+  color: var(--white);
+}
+.contact-phone {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
 }

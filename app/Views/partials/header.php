@@ -23,7 +23,11 @@ $config = $config ?? [];
         <span class="nav-icon" aria-hidden="true">◆</span>
         <span class="nav-label">Qué incluye</span>
       </a>
-      <a href="#cta" class="nav-item">
+      <a href="#equipo" class="nav-item">
+        <span class="nav-icon" aria-hidden="true">👥</span>
+        <span class="nav-label">Equipo</span>
+      </a>
+      <a href="#contacto" class="nav-item">
         <span class="nav-icon" aria-hidden="true">▸</span>
         <span class="nav-label">Contacto</span>
       </a>
@@ -36,7 +40,8 @@ $config = $config ?? [];
       <span class="scroll-line"></span>
     </div>
   </div>
-  <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-label="Abrir o cerrar menú" aria-expanded="false">
+  <button type="button" class="sidebar-toggle" id="sidebar-toggle" aria-label="Abrir o cerrar menú"
+    aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </aside>

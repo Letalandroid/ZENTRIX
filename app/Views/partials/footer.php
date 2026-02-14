@@ -23,7 +23,7 @@ $config = $config ?? [];
     <div class="footer-contact">
       <h4>Contacto</h4>
       <p>¿Tienes un proyecto en mente?</p>
-      <a href="#cta" class="btn btn-glass btn-sm">Cotizar ahora</a>
+      <a href="#contacto" class="btn btn-glass btn-sm">Contáctanos</a>
     </div>
   </div>
   <div class="footer-bottom">
