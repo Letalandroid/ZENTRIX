@@ -89,8 +89,26 @@ $pageId = 'home';
   </div>
 </section>
 
+<section class="section section-alt" id="equipo">
+  <div class="container">
+    <p class="section-label">.04</p>
+    <h2 class="section-title">Nuestro Equipo</h2>
+    <p class="section-lead">Conoce a los profesionales detrás de ZENTRIX.</p>
+    <div class="team-grid">
+      <article class="team-card glass-card">
+        <div class="team-avatar">CM</div>
+        <div class="team-info">
+          <h3 class="team-name">Carlos Moran Mauricio</h3>
+          <p class="team-role">Fundador & Desarrollador</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="section section-cta-block" id="cta">
   <div class="container">
+    <p class="section-label">.05</p>
     <h2 class="section-title">¿Listo para empezar?</h2>
     <p class="section-lead">Suscríbete y tendrás dominio, servidor y soporte desde el primer día.</p>
     <div class="hero-ctas">
